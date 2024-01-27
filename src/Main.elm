@@ -17,7 +17,7 @@ init : () -> (Model, Cmd Msg)
 init _ =
     ( initialModel
     , Http.get {
-        url = "mots.txt",
+        url = "../static/mots.txt",
         expect = Http.expectString GotWords
     }
     )
